@@ -3,285 +3,276 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Terms of Service - Stay Mate</title>
+  <title>Terms of Service – Stay Mate</title>
+
   <style>
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 1em;
-    line-height: 1.6;
-    max-width: 960px;
-    margin: 0 auto;
-    background: #ffffff;
-    color: #000000;
-  }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      padding: 1.2em;
+      line-height: 1.6;
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      color: #000000;
+    }
 
-  h1, h2 {
-    color: #1f2933;
-  }
+    h1, h2 {
+      color: #1f2933;
+    }
 
-  h1 {
-    margin-bottom: 0.5em;
-    font-size: 1.6rem;
-  }
+    h1 {
+      margin-bottom: 0.5em;
+      font-size: 1.8rem;
+    }
 
-  h2 {
-    margin-top: 1.5em;
-    font-size: 1.2rem;
-  }
+    h2 {
+      margin-top: 1.4em;
+      font-size: 1.3rem;
+    }
 
-  ul {
-    margin: 0.5em 0 1em 1.5em;
-  }
+    ul {
+      margin: 0.5em 0 1em 1.4em;
+    }
 
-  li {
-    margin: 0.3em 0;
-  }
+    li {
+      margin: 0.3em 0;
+    }
 
-  .lang-switch {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 1.5em;
-  }
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 1.2em;
+    }
 
-  .lang-switch button {
-    padding: 8px 18px;
-    border: 1px solid #2563eb;
-    border-radius: 999px;
-    background: transparent;
-    color: #2563eb;
-    cursor: pointer;
-    font-weight: 600;
-  }
+    .lang-switch button {
+      padding: 8px 18px;
+      border: 1px solid #2563eb;
+      border-radius: 999px;
+      background: transparent;
+      color: #2563eb;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+    }
 
-  .lang-switch button.active {
-    background: #2563eb;
-    color: #fff;
-  }
+    .lang-switch button.active {
+      background: #2563eb;
+      color: #fff;
+    }
 
-  [data-lang-section] {
-    display: none;
-  }
+    [data-lang-section] {
+      display: none;
+    }
 
-  [data-lang-section].active {
-    display: block;
-  }
+    [data-lang-section].active {
+      display: block;
+    }
 
-  .note {
-    background: #f8fafc;
-    border-left: 4px solid #2563eb;
-    padding: 10px 16px;
-    margin: 12px 0;
-  }
+    .badge {
+      font-size: 0.85rem;
+      color: #475569;
+      background: #f1f5f9;
+      padding: 6px 10px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 1em;
+    }
 
-  .badge {
-    font-size: 0.85rem;
-    color: #475569;
-    background: #f1f5f9;
-    padding: 6px 10px;
-    border-radius: 8px;
-    display: inline-block;
-    margin-bottom: 1em;
-  }
+    footer {
+      margin-top: 3em;
+      text-align: center;
+      color: #475569;
+      font-size: 0.9rem;
+      padding-top: 1.5em;
+      border-top: 1px solid #e2e8f0;
+    }
 
-  a {
-    color: #2563eb;
-    text-decoration: none;
-  }
-
-  header {
-    margin-bottom: 18px;
-  }
-</style>
-
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
-<header>
-  <!-- English -->
-  <div data-lang-section="en-US" class="active">
-    <h1>Terms of Service – Stay Mate</h1>
-    <div class="badge">Last updated: November 19, 2025 • Effective date: November 10, 2025</div>
+
+  <!-- LANGUAGE SWITCH -->
+  <div class="lang-switch">
+    <button data-lang="vi" class="active">Tiếng Việt</button>
+    <button data-lang="en">English</button>
   </div>
 
-  <!-- Vietnamese -->
-  <div data-lang-section="vi">
-    <h1>Điều Khoản Dịch Vụ – Stay Mate</h1>
-    <div class="badge">Cập nhật lần cuối: 19/11/2025 • Hiệu lực từ: 10/11/2025</div>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header>
 
+    <!-- English -->
+    <div data-lang-section="en">
+      <h1>Terms of Service – Stay Mate</h1>
+      <div class="badge">Last updated: November 19, 2025 • Effective date: November 10, 2025</div>
+    </div>
 
-  <div id="lang-vi" data-lang-section="vi" class="active" role="region" aria-label="Tiếng Việt">
+    <!-- Vietnamese -->
+    <div data-lang-section="vi" class="active">
+      <h1>Điều Khoản Dịch Vụ – Stay Mate</h1>
+      <div class="badge">Cập nhật lần cuối: 19/11/2025 • Hiệu lực từ: 10/11/2025</div>
+    </div>
+
+  </header>
+
+  <!-- VIETNAMESE CONTENT -->
+  <div data-lang-section="vi" class="active">
+
     <h2>1. Mục đích ứng dụng</h2>
-    <p>Stay Mate là ứng dụng quản lý thuê trọ dành riêng cho người thuê. Ứng dụng cho phép người dùng:</p>
+    <p>Stay Mate là ứng dụng hỗ trợ người thuê trọ quản lý thông tin thuê và trao đổi với chủ nhà. Ứng dụng cung cấp các chức năng:</p>
     <ul>
-      <li>Xem và quản lý thông tin thuê trọ</li>
+      <li>Xem thông tin phòng trọ và hợp đồng</li>
       <li>Trao đổi với chủ nhà</li>
       <li>Theo dõi hóa đơn và trạng thái thanh toán</li>
-      <li>Báo cáo sự cố hoặc yêu cầu bảo trì</li>
-      <li>Xem và tải tài liệu hợp đồng</li>
+      <li>Gửi yêu cầu bảo trì</li>
+      <li>Xem và tải các tài liệu liên quan</li>
     </ul>
-    <p><strong>Lưu ý:</strong> Ứng dụng <strong>không xử lý thanh toán trực tuyến</strong>. Mọi giao dịch ngân hàng thực hiện bên ngoài ứng dụng.</p>
+    <p><strong>Lưu ý:</strong> Ứng dụng <strong>không hỗ trợ thanh toán trực tuyến</strong>. Mọi giao dịch ngân hàng được thực hiện bên ngoài ứng dụng.</p>
 
     <h2>2. Điều kiện sử dụng</h2>
     <p>Bằng việc sử dụng ứng dụng, bạn xác nhận rằng:</p>
     <ul>
-      <li>Bạn đủ 18 tuổi hoặc được người giám hộ cho phép</li>
+      <li>Bạn từ 18 tuổi trở lên hoặc có sự đồng ý của người giám hộ</li>
       <li>Bạn có quyền hợp pháp để tham gia thỏa thuận này</li>
-      <li>Thông tin bạn cung cấp là chính xác và trung thực</li>
+      <li>Thông tin bạn cung cấp là chính xác</li>
     </ul>
 
     <h2>3. Tài khoản người dùng</h2>
-    <p>Để truy cập một số tính năng, bạn cần tạo tài khoản hoặc đăng nhập bằng nhà cung cấp xác thực được hỗ trợ.</p>
-    <p>Bạn đồng ý:</p>
+    <p>Một số chức năng yêu cầu bạn đăng nhập. Bạn đồng ý:</p>
     <ul>
-      <li>Cung cấp thông tin chính xác, cập nhật</li>
-      <li>Giữ bảo mật thông tin đăng nhập</li>
-      <li>Thông báo ngay nếu nghi ngờ truy cập trái phép</li>
+      <li>Cung cấp thông tin chính xác</li>
+      <li>Bảo mật tài khoản</li>
+      <li>Thông báo ngay khi phát hiện truy cập trái phép</li>
     </ul>
 
     <h2>4. Sử dụng hợp lệ</h2>
-    <p>Người dùng cam kết <strong>không</strong> thực hiện các hành vi:</p>
+    <p>Bạn cam kết không:</p>
     <ul>
       <li>Sử dụng ứng dụng cho mục đích trái pháp luật</li>
-      <li>Tải nội dung gây hại, xúc phạm hoặc gây hiểu lầm</li>
-      <li>Lạm dụng hệ thống nhắn tin (spam, quấy rối)</li>
-      <li>Cố gắng can thiệp, bẻ khoá hoặc gây gián đoạn dịch vụ</li>
-      <li>Tải nội dung có bản quyền hoặc bí mật mà không có quyền</li>
+      <li>Tải lên nội dung độc hại, xúc phạm hoặc sai lệch</li>
+      <li>Spam hoặc quấy rối người dùng khác</li>
+      <li>Can thiệp, phá hoại hoặc đảo ngược mã ứng dụng</li>
+      <li>Tải lên tài liệu có bản quyền mà không được phép</li>
     </ul>
-    <p>Vi phạm có thể dẫn đến đình chỉ hoặc chấm dứt tài khoản.</p>
 
-    <h2>5. Thông tin hợp đồng & tương tác</h2>
-    <p>Ứng dụng chỉ là công cụ kỹ thuật cho việc chia sẻ thông tin giữa người thuê và chủ nhà.</p>
+    <h2>5. Thông tin thuê trọ & tương tác</h2>
     <ul>
-      <li>Nhà cung cấp dịch vụ <strong>không phải là bên</strong> trong hợp đồng thuê</li>
-      <li>Mọi tranh chấp giữa người thuê và chủ nhà phải được giải quyết <strong>ngoài</strong> ứng dụng</li>
-      <li>Độ chính xác của dữ liệu hợp đồng chịu trách nhiệm bởi người dùng và chủ nhà</li>
+      <li>Stay Mate chỉ là nền tảng hỗ trợ kỹ thuật</li>
+      <li>Nhà phát triển ứng dụng <strong>không phải là bên tham gia hợp đồng thuê</strong></li>
+      <li>Mọi tranh chấp được giải quyết ngoài ứng dụng</li>
     </ul>
 
     <h2>6. Thanh toán</h2>
-    <p>Stay Mate <strong>không xử lý thanh toán</strong>. Ứng dụng chỉ hiển thị số tiền, hạn thanh toán và thông tin tài khoản chủ nhà. Người dùng tự thực hiện chuyển khoản qua ứng dụng ngân hàng của mình. Nhà cung cấp không chịu trách nhiệm cho lỗi hoặc tranh chấp liên quan đến thanh toán.</p>
+    <p>Ứng dụng chỉ hiển thị thông tin hóa đơn. Người dùng tự thanh toán qua ngân hàng của mình.</p>
 
-    <h2>7. Quyền sở hữu nội dung</h2>
-    <p>Bạn vẫn giữ quyền sở hữu đối với hình ảnh, tin nhắn và tài liệu bạn tải lên. Bằng việc sử dụng ứng dụng, bạn cấp cho Nhà cung cấp quyền lưu và hiển thị nội dung đó một cách giới hạn, không độc quyền nhằm cung cấp dịch vụ.</p>
-    <p>Bạn cam kết không tải:</p>
+    <h2>7. Nội dung người dùng</h2>
+    <p>Bạn giữ quyền sở hữu nội dung bạn tải lên. Bạn cấp cho chúng tôi quyền sử dụng nội dung đó với mục đích cung cấp dịch vụ.</p>
+
+    <h2>8. Quyền riêng tư</h2>
+    <p>Việc sử dụng ứng dụng chịu sự điều chỉnh của <a href="https://kh-thien.github.io/privacy-policy-staymate-mobile-app/">Chính sách Quyền Riêng Tư</a>.</p>
+
+    <h2>9. Sẵn có của ứng dụng</h2>
+    <p>Ứng dụng được cung cấp theo nguyên tắc “AS IS”. Tính năng có thể thay đổi mà không cần báo trước.</p>
+
+    <h2>10. Chấm dứt sử dụng</h2>
     <ul>
-      <li>Nội dung bất hợp pháp</li>
-      <li>Tài liệu có bản quyền khi chưa được cho phép</li>
-      <li>Tệp độc hại (malware)</li>
+      <li>Tài khoản có thể bị đình chỉ nếu vi phạm Điều khoản</li>
+      <li>Bạn có thể dừng sử dụng bất cứ lúc nào</li>
     </ul>
-
-    <h2>8. Dữ liệu & Quyền riêng tư</h2>
-    <p>Việc sử dụng ứng dụng chịu điều chỉnh bởi <a href="https://kh-thien.github.io/privacy-policy-staymate-mobile-app/">Chính sách Quyền riêng tư</a>, mô tả dữ liệu thu thập, cách lưu trữ và quyền của bạn. Bằng sử dụng ứng dụng, bạn đồng ý với chính sách đó.</p>
-
-    <h2>9. Sẵn có của ứng dụng & cập nhật</h2>
-    <p>Ứng dụng được cung cấp theo nguyên tắc “AS IS”. Nhà cung cấp có thể cập nhật, thay đổi, tạm dừng hoặc ngưng cung cấp tính năng mà không cần thông báo trước. Nhà cung cấp không chịu trách nhiệm cho thời gian ngưng hoạt động, mất dữ liệu (trừ khi pháp luật yêu cầu) hoặc gián đoạn dịch vụ.</p>
-
-    <h2>10. Chấm dứt</h2>
-    <p>Chúng tôi có thể đình chỉ hoặc chấm dứt tài khoản nếu bạn:</p>
-    <ul>
-      <li>Vi phạm các Điều khoản</li>
-      <li>Tham gia hành vi gian lận, lạm dụng hoặc trái pháp luật</li>
-      <li>Lạm dụng ứng dụng theo cách gây hại</li>
-    </ul>
-    <p>Bạn có thể chấm dứt sử dụng bất kỳ lúc nào bằng cách xóa tài khoản hoặc gỡ ứng dụng.</p>
 
     <h2>11. Giới hạn trách nhiệm</h2>
-    <p>Trong phạm vi luật cho phép, Nhà cung cấp không chịu trách nhiệm đối với các thiệt hại gián tiếp, ngẫu nhiên hoặc hậu quả; không chịu trách nhiệm cho tranh chấp giữa người thuê và chủ nhà; và việc sử dụng ứng dụng hoàn toàn do bạn chịu rủi ro.</p>
+    <p>Nhà cung cấp không chịu trách nhiệm đối với các thiệt hại gián tiếp hoặc tranh chấp giữa người thuê và chủ nhà.</p>
 
     <h2>12. Thay đổi Điều khoản</h2>
-    <p>Chúng tôi có thể cập nhật Điều khoản này theo thời gian. Mọi thay đổi sẽ được đăng lên ứng dụng hoặc gửi email. Việc bạn tiếp tục sử dụng ứng dụng đồng nghĩa chấp nhận Điều khoản đã cập nhật.</p>
+    <p>Điều khoản có thể được cập nhật định kỳ. Việc tiếp tục sử dụng đồng nghĩa bạn chấp nhận các thay đổi.</p>
 
     <h2>13. Liên hệ</h2>
-    <p>Nếu bạn có câu hỏi liên quan đến Điều khoản này, vui lòng liên hệ: <strong>staymate.home@gmail.com</strong></p>
+    <p>Email: <strong>staymate.home@gmail.com</strong></p>
+
   </div>
 
-  <div id="lang-en" data-lang-section="en" role="region" aria-label="English">
+  <!-- ENGLISH CONTENT -->
+  <div data-lang-section="en">
+
     <h2>1. Purpose of the Application</h2>
-    <p>Stay Mate is a rental property management application designed exclusively for tenants. The Application allows users to:</p>
+    <p>Stay Mate is an application designed to help tenants manage rental information and communicate with their landlord. The Application includes:</p>
     <ul>
-      <li>View and manage rental information</li>
-      <li>Communicate with their landlord</li>
-      <li>Track rental bills and payment status</li>
-      <li>Report issues or maintenance requests</li>
-      <li>View and download contract documents</li>
+      <li>Viewing rental and contract details</li>
+      <li>Messaging with landlords</li>
+      <li>Tracking bills and payment status</li>
+      <li>Submitting maintenance requests</li>
+      <li>Viewing and downloading related documents</li>
     </ul>
-    <p><strong>Note:</strong> The Application <strong>does not process online payments</strong>. All banking transfers are performed outside the app.</p>
+    <p><strong>Note:</strong> The Application <strong>does not provide online payments</strong>. All banking transfers occur outside the Application.</p>
 
     <h2>2. Eligibility</h2>
     <p>By using the Application, you confirm that:</p>
     <ul>
-      <li>You are at least <strong>18 years old</strong>, or using the app with permission from a legal guardian</li>
-      <li>You have the legal authority to enter into this agreement</li>
-      <li>The information you provide is accurate and truthful</li>
+      <li>You are at least 18 years old or have guardian permission</li>
+      <li>You have legal authority to enter this agreement</li>
+      <li>The information you provide is truthful</li>
     </ul>
 
     <h2>3. User Account</h2>
-    <p>To access certain features you must create an account or sign in through supported authentication providers.</p>
-    <p>You agree to:</p>
+    <p>Certain features require authentication. You agree to:</p>
     <ul>
-      <li>Provide accurate and up-to-date information</li>
-      <li>Keep your login credentials secure</li>
-      <li>Notify us immediately if you suspect unauthorized access</li>
+      <li>Provide accurate information</li>
+      <li>Protect your account credentials</li>
+      <li>Notify us of unauthorized access</li>
     </ul>
 
     <h2>4. Acceptable Use</h2>
-    <p>Users agree <strong>not to</strong>:</p>
+    <p>Users agree not to:</p>
     <ul>
-      <li>Use the Application for unlawful purposes</li>
+      <li>Use the Application unlawfully</li>
       <li>Upload harmful, offensive, or misleading content</li>
-      <li>Misuse the messaging system (spam, harassment, abuse)</li>
-      <li>Attempt to reverse-engineer, hack, or disrupt the Application</li>
-      <li>Upload copyrighted or confidential materials without permission</li>
+      <li>Spam or harass others</li>
+      <li>Hack, disrupt, or reverse-engineer the system</li>
+      <li>Upload copyrighted materials without permission</li>
     </ul>
-    <p>Violations may result in account suspension or termination.</p>
 
-    <h2>5. Rental Information & Interactions</h2>
-    <p>The Application acts only as a digital tool to help tenants and landlords share information.</p>
+    <h2>5. Rental Information</h2>
     <ul>
-      <li>The Service Provider is <strong>not a party</strong> to any rental agreement</li>
-      <li>All disputes between tenant and landlord must be resolved <strong>outside</strong> the Application</li>
-      <li>The accuracy of rental data is the responsibility of users and landlords</li>
+      <li>The Application is only a technical platform</li>
+      <li>The Provider is <strong>not a party</strong> to rental agreements</li>
+      <li>Disputes must be resolved outside the Application</li>
     </ul>
 
     <h2>6. Payments</h2>
-    <p>Stay Mate <strong>does not process payments</strong>. The app only displays bill amounts, due dates, and the landlord’s bank information. Users must complete transfers through their own banking apps. The Service Provider is not responsible for payment errors, delays, or disputes.</p>
+    <p>The Application only displays billing information. Users are responsible for external bank transfers.</p>
 
-    <h2>7. Content Ownership</h2>
-    <p>You retain ownership of images, chat messages, and documents you upload. By using the Application, you grant the Service Provider a limited, non-exclusive, and secure right to store and display this content solely to provide the service.</p>
-    <p>You agree not to upload:</p>
-    <ul>
-      <li>Illegal content</li>
-      <li>Copyrighted materials without permission</li>
-      <li>Harmful files (malware, viruses, etc.)</li>
-    </ul>
+    <h2>7. User Content</h2>
+    <p>You retain ownership of your content. You grant us permission to store and display it solely to provide the service.</p>
 
-    <h2>8. Data & Privacy</h2>
-    <p>Use of the Application is also governed by the <a href="https://kh-thien.github.io/privacy-policy-staymate-mobile-app/">Privacy Policy</a>, which describes data collection, storage and your rights. By using the Application, you agree to the Privacy Policy.</p>
+    <h2>8. Privacy</h2>
+    <p>Your use is governed by the <a href="https://kh-thien.github.io/privacy-policy-staymate-mobile-app/">Privacy Policy</a>.</p>
 
-    <h2>9. App Availability & Updates</h2>
-    <p>The Application is provided <strong>“AS IS”</strong>. The Service Provider may update or modify features, temporarily suspend the service for maintenance, or discontinue features without prior notice. The Provider is not liable for downtime, data loss (except where required by law), or interruptions.</p>
+    <h2>9. Availability</h2>
+    <p>The Application is provided “AS IS”. Features may change without notice.</p>
 
     <h2>10. Termination</h2>
-    <p>We may suspend or terminate your account if you:</p>
     <ul>
-      <li>Violate these Terms</li>
-      <li>Engage in fraud, abuse, or illegal activity</li>
-      <li>Misuse the Application in any way</li>
+      <li>Accounts may be suspended for violations</li>
+      <li>You may stop using the Application anytime</li>
     </ul>
-    <p>You may terminate your use at any time by deleting your account or uninstalling the Application.</p>
 
     <h2>11. Limitation of Liability</h2>
-    <p>To the fullest extent permitted by law, the Service Provider is not responsible for any indirect, incidental, or consequential damages. The Service Provider is not liable for disputes between tenants and landlords. Use of the Application is solely at your own risk.</p>
+    <p>The Provider is not responsible for indirect damages or tenant–landlord disputes.</p>
 
     <h2>12. Changes to Terms</h2>
-    <p>We may update these Terms from time to time. Updates will be posted in the Application or sent via email. Continued use of the Application signifies acceptance of the updated Terms.</p>
+    <p>Terms may be updated periodically. Continued use indicates acceptance.</p>
 
-    <h2>13. Contact Information</h2>
-    <p>If you have questions regarding these Terms, you may contact us at: <strong>staymate.home@gmail.com</strong></p>
+    <h2>13. Contact</h2>
+    <p>Email: <strong>staymate.home@gmail.com</strong></p>
+
   </div>
 
   <footer>
-    <p>© Stay Mate • Developed by Khac Thien Nguyen</p>
+    © Stay Mate • Developed by Khac Thien Nguyen
   </footer>
 
   <script>
@@ -291,20 +282,23 @@
     buttons.forEach((btn) => {
       btn.addEventListener('click', () => {
         buttons.forEach((b) => b.classList.remove('active'));
-        sections.forEach((section) => section.classList.remove('active'));
+        sections.forEach((s) => s.classList.remove('active'));
 
         btn.classList.add('active');
         const target = btn.dataset.lang;
-        document.querySelector(`[data-lang-section="${target}"]`).classList.add('active');
+
+        document.querySelectorAll(`[data-lang-section="${target}"]`)
+          .forEach(sec => sec.classList.add('active'));
 
         localStorage.setItem('terms_lang', target);
       });
     });
 
     const savedLang = localStorage.getItem('terms_lang');
-    if (savedLang && savedLang !== 'vi') {
-      document.querySelector(`.lang-switch button[data-lang="${savedLang}"]`)?.click();
+    if (savedLang && savedLang !== "vi") {
+      document.querySelector(`button[data-lang="${savedLang}"]`)?.click();
     }
   </script>
+
 </body>
 </html>
